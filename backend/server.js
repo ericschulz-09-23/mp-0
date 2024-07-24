@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
  
-mongoose.connect("Your MongoDB URI link", {
+mongoose.connect("mongodb://localhost:27017/Stock Market", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
